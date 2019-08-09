@@ -1,10 +1,6 @@
-action "GitHub Action for npm" {
-  uses = "actions/npm@1.0.0"
-}
-
-workflow "Build, Test, and Publish" {
+workflow "Build, Test, Lint & Release" {
   on = "push"
-  resolves = ["Publish"]
+  resolves = ["Publish Release"]
 }
 
 action "Build" {
@@ -12,22 +8,27 @@ action "Build" {
   args = "install"
 }
 
-action "Test" {
+action "Lint" {
   needs = "Build"
+  uses = "actions/npm@master"
+  args = "install"
+}
+
+action "Test" {
+  needs = "Lint"
   uses = "actions/npm@master"
   args = "test"
 }
 
 # Filter for a new tag
-action "Tag" {
+action "Filters for Master branch" {
   needs = "Test"
   uses = "actions/bin/filter@master"
   args = "tag"
 }
 
-action "Publish" {
-  needs = "Tag"
-  uses = "actions/npm@master"
-  args = "publish --access public"
-  secrets = ["NPM_AUTH_TOKEN"]
+action "Publish Release" {
+  uses = "frankjuniorr/github-create-release-action@master"
+  needs = ["Filters for Master branch"]
+  secrets = ["GITHUB_TOKEN"]
 }
