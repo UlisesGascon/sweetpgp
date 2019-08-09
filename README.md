@@ -10,6 +10,7 @@ This library is just a simple wrapper for [openpgpjs](https://github.com/openpgp
 **You should know how PGP works in theory at least...**
 
 ![schema that expains the process](other/schema.png)
+
 _Credits to [FreecodeCamp for this image](https://cdn-media-1.freecodecamp.org/images/1*LpV5okf8ByND-ClSQZ7-aA.png)_
 
 
@@ -97,4 +98,5 @@ This project is licensed under the GNU GPL3.0 License - see the [LICENSE.md](LIC
 **Just for fun :trollface:**
 
 ![Just a Joke](other/joke.png)
+
 _Credits to awesome [explainxkcd](https://www.explainxkcd.com/wiki/images/3/3b/public_key.png)_
