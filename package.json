@@ -1,6 +1,6 @@
 {
   "name": "sweetpgp",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "Because sometimes it can be hard to manage pgp alone",
   "main": "index.js",
   "scripts": {
