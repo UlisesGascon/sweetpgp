@@ -11,7 +11,7 @@ action "Build" {
 action "Lint" {
   needs = "Build"
   uses = "actions/npm@master"
-  args = "install"
+  args = "run lint"
 }
 
 action "Test" {
