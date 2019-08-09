@@ -1,0 +1,46 @@
+{
+  "name": "sweetpgp",
+  "version": "0.0.1",
+  "description": "Because sometimes it can be hard to manage pgp alone",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watchAll",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "dev": "nodemon index.js"
+  },
+  "standard": {
+    "env": [ "jest" ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UlisesGascon/sweetpgp.git"
+  },
+  "keywords": [
+    "pgp",
+    "openpgp"
+  ],
+  "author": "Ulises Gascón",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/UlisesGascon/sweetpgp/issues"
+  },
+  "homepage": "https://github.com/UlisesGascon/sweetpgp#readme",
+  "dependencies": {
+    "openpgp": "4.5.5"
+  },
+  "devDependencies": {
+    "husky": "3.0.3",
+    "jest": "24.8.0",
+    "nodemon": "1.19.1",
+    "standard": "13.1.0"
+  }, 
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  }
+}
