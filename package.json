@@ -9,11 +9,18 @@
     "test:watch": "jest --verbose ./**/*.test.js --watchAll",
     "lint": "standard",
     "lint:fix": "standard --fix",
+    "docs": "npm run docs:build",
+    "docs:build": "documentation build lib/index.js -f html -o docs",
+    "docs:live": "documentation serve lib/index.js",
+    "docs:watch": "documentation serve --watch lib/index.js",
     "dev": "nodemon index.js"
   },
   "standard": {
     "env": [
       "jest"
+    ],
+    "ignore": [
+      "/docs/**/*.js"
     ]
   },
   "repository": {
@@ -36,6 +43,7 @@
   "devDependencies": {
     "husky": "3.0.3",
     "jest": "24.8.0",
+    "documentation": "^12.1.1",
     "nodemon": "1.19.1",
     "standard": "13.1.0"
   },
