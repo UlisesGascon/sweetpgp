@@ -1,0 +1,14 @@
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: OpenPGP.js v4.5.5
+Comment: https://openpgpjs.org
+Comment: This is a revocation certificate
+
+wsBfBCABCAAJBQJdTdzqAh0AAAoJELepLU2x/oI0BY0IAIOlQp6VpTSyYtno
++XaMptfKyJ2lqzZDKuRiCkOwJbpTeShIgI7i+Z3ikFer0E1/2kGIoKBQD0fd
+fannOosoJL0vi2+2V/wNqMs2Hlmve0gLhTzekGahO+PZk2i0i+uQ5GMXMxnW
+IwiUzbhipT9ejwmqVH6h6EnLV6zTGrYXW6ate6iP+DL//LlF11yiyS952fCE
+q8tladwsWqI0RdcFNRBUoT/CKMCCiD3LCZcUxfXrnV2ogz9PN6BUAlYY8K9z
+ZvPv21lPs96Zy4V83t2jaMtrfxYPoV1fujuzl72MeBbRIAvjG+VkVY91eYE6
+PrxmV0I4fivgBoO6HzFiW6PMMkY=
+=fuB5
+-----END PGP PUBLIC KEY BLOCK-----
