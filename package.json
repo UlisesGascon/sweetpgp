@@ -2,17 +2,19 @@
   "name": "sweetpgp",
   "version": "0.0.1",
   "description": "Because sometimes it can be hard to manage pgp alone",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watchAll",
+    "test": "jest  --verbose ./**/*.test.js",
+    "test:coverage": "jest --verbose ./**/*.test.js --coverage",
+    "test:watch": "jest --verbose ./**/*.test.js --watchAll",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "dev": "nodemon index.js"
   },
   "standard": {
-    "env": [ "jest" ]
+    "env": [
+      "jest"
+    ]
   },
   "repository": {
     "type": "git",
@@ -36,7 +38,7 @@
     "jest": "24.8.0",
     "nodemon": "1.19.1",
     "standard": "13.1.0"
-  }, 
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint",
